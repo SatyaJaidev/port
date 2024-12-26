@@ -1,0 +1,98 @@
+/*
+.project-heading{
+    text-align: center;
+    padding: 4rem 0 2 rem 0;
+}
+
+.project-conatiner{
+    max-width: 1140px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 40px;
+    padding-bottom: 5rem;
+}
+
+.project-card{
+    background: black;
+    padding: 1.2rem 1rem;
+    justify-content: center;
+    display: absolute;
+}
+
+.project-card img{
+    width: 20%;
+    justify-content: center;
+    display: flex;
+}
+
+.project-title{
+    color:#fff;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.pro-details p{
+    padding-bottom: 1rem;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.pro-btns{
+    display: flex;
+    justify-content: center;
+    padding:12px 32px 2rem 0;
+    border: 1px #fff;
+}
+*/
+
+.project-heading {
+    text-align: center;
+    padding: 4rem 0 2rem 0;
+}
+
+.project-conatiner {
+    max-width: 1140px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    padding-bottom: 5rem;
+}
+
+.project-card {
+    background: black;
+    padding: 1.2rem 1rem;
+    display: flex; /* Ensures centering */
+    flex-direction: column;
+    align-items: center; /* Horizontal centering */
+    justify-content: center; /* Vertical centering */
+}
+
+.project-card img {
+    width: 40%;
+    display: block; /* Removes unwanted inline spacing */
+    margin: 0 auto; /* Centers horizontally */
+}
+
+.project-title {
+    color: #fff;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    font-size: 200%;
+}
+
+.pro-details p {
+    padding-bottom: 1rem;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.pro-btns {
+    display: flex;
+    justify-content: center;
+    padding: 12px 32px 2rem 0;
+    border: 1px #fff;
+}
