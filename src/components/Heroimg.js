@@ -2,7 +2,7 @@ import "./HeroimgStyles.css";
 
 import React from 'react'
 import IntroImg from "../assets/intro-bg.jpg";
-import {Link} from "react-router-dom";
+
 
 const Heroimg = () => {
   return (
@@ -11,11 +11,12 @@ const Heroimg = () => {
             <img className="into-img" src={IntroImg} alt="IntroImg"/>
         </div>
         <div className="content">
-            <p>HI, I'M A SOFTWARE ENGINEER.</p>
-            <h1>React Developer.</h1>
+            <p>HI, My name is Jaidev and I'm a, </p>
+            <h1>Software Developer.</h1>
             <div>
-                <Link to="/project" className="btn">Projects</Link>
-                <Link to="/contact" className="btn">Contact</Link>
+                <a href="/Satya Jaidev N.pdf" download className="btn">Resume</a>
+                <a href="https://www.linkedin.com/in/satya-jaidev-n-148164280/" target="_blank" rel="noopener noreferrer" className="btn">LinkedIn</a>
+                <a href="https://github.com/SatyaJaidev" target="_blank" rel="noopener noreferrer" className="btn">Github</a>
             </div>
         </div>
     </div>
@@ -23,3 +24,4 @@ const Heroimg = () => {
 }
 
 export default Heroimg;
+

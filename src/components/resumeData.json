@@ -1,0 +1,39 @@
+{
+    "skills": [
+      "Python",
+      "JavaScript",
+      "React",
+      "SQL",
+      "Git",
+      "AWS",
+      "Docker",
+      "Agile"
+    ],
+    "experience": [
+      {
+        "role": "Software Engineering",
+        "company": "Capgemini",
+        "duration": "Summer 2023",
+        "details": "Developed a real-time e-commerce platform using the MERN stack, RESTful API, and SQL, enhancing user retention by 20% and serving 1,000+ visitors. Optimized performance with analytics tools and containerized deployments, reducing page load time by 15% and manual processing by 30%."
+      },
+      {
+        "role": "Full Stack Intern",
+        "company": "Signzy",
+        "duration": "Co-Op 2022",
+        "details": "Developed fintech features using Node.js, Express.js, and MongoDB, enhancing system reliability by 25% and handling 10,000+ daily transactions with zero inconsistencies. Built a responsive front-end with React.js, improving user engagement by 15% and reducing API response times by 20%."
+      }
+    ],
+    "projects": [
+      {
+        "name": "Personal Website",
+        "description": "Created a personal portfolio website showcasing my projects and skills using HTML, CSS, and JavaScript."
+      },
+      {
+        "name": "E-Commerce Web App",
+        "description": "Built a full-stack e-commerce application using the MERN stack with integrated payment systems."
+      }
+    ],
+    "linkedin": "https://www.linkedin.com/in/satya-jaidev-n-148164280/",
+    "github": "https://github.com/yourusername"
+  }
+  

@@ -13,16 +13,22 @@ const Navbar = () => {
       </Link>
       <ul className={click ? "nav-menu active":"nav-menu"}>
         <li>
-            <Link to="/">Home</Link>
+            <Link to="/" style={{fontSize:"25px"}}>Home</Link>
         </li>
         <li>
-            <Link to="/project">Project</Link>
+            <Link to="/project" style={{fontSize:"25px"}}>Project</Link>
         </li>
         <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact" style={{fontSize:"25px"}}>Contact</Link>
         </li>
         <li>
-            <Link to="/about">About</Link>
+          <Link to="/Skills" style={{fontSize:"25px"}}>Skills</Link> 
+        </li>
+        <li>
+          <Link to="/Chat" style={{color:"rgb(173,216,243)",fontSize:"25px"}}>Chat With Me</Link>
+        </li> 
+        <li>
+            <Link to="/about" style={{fontSize:"25px"}}>About</Link>
         </li>
       </ul>
       <div className="hamburger" onClick={handleClick}>

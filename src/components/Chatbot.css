@@ -1,0 +1,88 @@
+/* Apply styles specifically to the message bubble */
+.cs-message {
+  background-color: rgb(255, 255, 255) !important; /* Force yellow background */
+  color: rgb(14, 14, 14) !important; /* Adjust text color for visibility */
+  border-radius: 20px; /* Optional: Adds rounded corners */
+  padding: 10px;
+  margin: 5px 0;
+  z-index: -10;
+}
+
+/* Style for the user message alignment */
+.cs-message[data-sender="user"] {
+  align-self: flex-end;
+}
+
+/* Style for ChatGPT messages */
+.cs-message[data-sender="ChatGPT"] {
+  align-self: flex-start;
+}
+
+.chat-background {
+  display: flex; /* Enables flexbox layout */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  height: 100vh; /* Ensures the container takes full viewport height */
+  width: 100vw; /* Ensures the container takes full viewport width */
+  background-size: cover;
+  background-image: url("../assets/intro-bg.jpg");
+  opacity: 90%; 
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.chat-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8); /* Black with 80% opacity */
+  z-index: -10; /* Ensure it stays behind the content */
+}
+
+
+.heading{
+  color: blue;
+}
+
+
+/* Chat Container */
+.chat-container {
+  background-color: rgb(243, 240, 240) !important;
+  width: 100%; /* Adjust as needed */
+  max-width: 650px; /* Optional: Limits the maximum width */
+  height: 100%; /* Optional: Sets a height for the chat container */
+  max-height: 450px; /* Optional: Limits the maximum height */
+  flex-direction: column 100px;
+  background-color: rgb(5, 5, 5); /* Optional: Sets a background color for the chat container */
+  box-shadow: 0 4px 10px rgba(245, 4, 4, 0.2); /* Optional: Adds shadow for better visibility */
+  border-radius: 20px; /* Optional: Rounds the corners */
+  display: flex; /* Enables flex layout for internal alignment */
+  flex-direction: column; /* Ensures children stack vertically */
+  overflow: hidden; /* Ensures content stays within the bounds */
+}
+
+.cs-message .cs-message__content {
+  color: rgb(16, 16, 16); /* Changes text message color to yellow */
+  border-radius:20px;
+}
+
+/* Optional: Styling the message input text color */
+.cs-message-input {
+  color: rgb(12, 12, 11); /* Changes input text color to yellow */
+}
+
+.cs-message-input::placeholder {
+  color: rgb(12, 12, 12); /* Changes placeholder text color to yellow */
+}
+
+/* Optional: Styling the typing indicator */
+.cs-typing-indicator {
+  color: rgb(11, 11, 11); /* Changes the typing indicator text color to yellow */
+}
+
+
+
+
+

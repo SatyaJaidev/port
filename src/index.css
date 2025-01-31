@@ -12,7 +12,7 @@ body{
 }
 
 h1,h4,p,a{
-  color: white;
+  color: rgb(249, 251, 252);
   text-decoration: none;
 }
 
@@ -25,7 +25,7 @@ ul{
   padding:12px 32px;
   font-size: 1rem;
   text-transform:uppercase;
-  background:yellow;
+  background:rgb(173,216,243);
   color:black;
   border:1px white;
   font-weight: 600;

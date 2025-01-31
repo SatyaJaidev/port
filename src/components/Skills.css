@@ -1,0 +1,13 @@
+.skills-container {
+    position: absolute; /* Puts it on top of Heroimg2 */
+    top: 30%; /* Adjusts placement so it appears below the "SKILLS" heading */
+    left: 50%; /* Centers horizontally */
+    transform: translate(-50%, -50%); /* Ensures proper centering */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    z-index: 10; /* Ensures it appears above the Hero image */
+    width: 80%; /* Adjust width for responsiveness */
+  }
+
