@@ -1,35 +1,70 @@
-/* Apply styles specifically to the message bubble */
+.cs-message-list {
+  display: flex;
+  flex-direction: column;
+
+}
+
+/* Optional: Make sure messages don’t stick to the edges */
 .cs-message {
-  background-color: rgb(255, 255, 255) !important; /* Force yellow background */
-  color: rgb(14, 14, 14) !important; /* Adjust text color for visibility */
-  border-radius: 20px; /* Optional: Adds rounded corners */
-  padding: 10px;
-  margin: 5px 0;
-  z-index: -10;
+  margin-left: 10px;
+  margin-right: 10px;
+
 }
 
-/* Style for the user message alignment */
-.cs-message[data-sender="user"] {
-  align-self: flex-end;
-}
-
-/* Style for ChatGPT messages */
-.cs-message[data-sender="ChatGPT"] {
-  align-self: flex-start;
-}
-
+/* Chat Background */
 .chat-background {
-  display: flex; /* Enables flexbox layout */
+  display: flex;
   justify-content: center; /* Centers content horizontally */
   align-items: center; /* Centers content vertically */
-  height: 100vh; /* Ensures the container takes full viewport height */
-  width: 100vw; /* Ensures the container takes full viewport width */
+  height: 100vh;
+  width: 100vw;
   background-size: cover;
   background-image: url("../assets/intro-bg.jpg");
-  opacity: 90%; 
+  opacity: 90%;
   background-position: center;
   background-repeat: no-repeat;
 }
+
+/* Chat Layout */
+.chat-layout {
+  display: flex;
+  justify-content: space-between; /* Pushes content apart */
+  align-items: center;
+  width: 80%;
+  max-width: 1200px; /* Prevents excessive stretching */
+}
+
+/* Chat Text Container */
+.chat-text-container {
+  flex: 1;
+  max-width: 450px;
+  color: white;
+  text-align: left;
+  padding: 20px;
+}
+
+.chat-text-container p,
+.chat-text-container h1 {
+  white-space: nowrap;
+  margin-left: -15rem;
+}
+
+/* Chat Container */
+.chat-container {
+  background-color: white !important;
+  width: 700px;
+  max-width: 650px;
+  height: 700px;
+  max-height: 450px;
+  flex-direction: column;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin-right: -10rem;
+}
+
 .chat-container::before {
   content: "";
   position: absolute;
@@ -37,52 +72,26 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.8); /* Black with 80% opacity */
-  z-index: -10; /* Ensure it stays behind the content */
+  background-color: rgba(0, 0, 0, 0.8); /* ✅ Black with 80% opacity */
+  z-index: -10; /* Keeps it behind the content */
 }
 
 
-.heading{
-  color: blue;
-}
-
-
-/* Chat Container */
-.chat-container {
-  background-color: rgb(243, 240, 240) !important;
-  width: 100%; /* Adjust as needed */
-  max-width: 650px; /* Optional: Limits the maximum width */
-  height: 100%; /* Optional: Sets a height for the chat container */
-  max-height: 450px; /* Optional: Limits the maximum height */
-  flex-direction: column 100px;
-  background-color: rgb(5, 5, 5); /* Optional: Sets a background color for the chat container */
-  box-shadow: 0 4px 10px rgba(245, 4, 4, 0.2); /* Optional: Adds shadow for better visibility */
-  border-radius: 20px; /* Optional: Rounds the corners */
-  display: flex; /* Enables flex layout for internal alignment */
-  flex-direction: column; /* Ensures children stack vertically */
-  overflow: hidden; /* Ensures content stays within the bounds */
-}
-
+/* Chat Messages */
 .cs-message .cs-message__content {
-  color: rgb(16, 16, 16); /* Changes text message color to yellow */
-  border-radius:20px;
+  color: black;
 }
 
-/* Optional: Styling the message input text color */
+/* Message Input */
 .cs-message-input {
-  color: rgb(12, 12, 11); /* Changes input text color to yellow */
+  color: black;
 }
 
 .cs-message-input::placeholder {
-  color: rgb(12, 12, 12); /* Changes placeholder text color to yellow */
+  color: black;
 }
 
-/* Optional: Styling the typing indicator */
+/* Typing Indicator */
 .cs-typing-indicator {
-  color: rgb(11, 11, 11); /* Changes the typing indicator text color to yellow */
+  color: black;
 }
-
-
-
-
-
